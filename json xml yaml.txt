@@ -1,0 +1,139 @@
+JSON
+
+{
+ 	"students": [{
+ 	    "isStudent": false,
+ 			"firstName": "Wily",
+ 			"lastName": "Wonka",
+ 			"date": "07.07.1997",
+ 			"email": "willy.wonka@chocolatefactory.com",
+ 			"graduationYear": "2020",
+ 			"institution": "Unicorn University",
+ 			"graduateStatus": false,
+ 			"Scholarship": {
+ 				"grantedBy": "Unicorn University Scholarship Fund",
+ 				"issued": ["Winnipeg, Canada","2018"],
+ 				"specialAwards": [true, "Best chocolate maker", "2001"]
+ 			}
+ 		},
+ 		{
+ 			"isStudent": false,
+ 			"firstName": "Bart",
+ 			"lastName": "Simpson",
+ 			"date": "01.01.1998",
+ 			"email": "bartboy@simpsonssuck.com",
+ 			"graduationYear": "2020",
+ 			"institution": "Universal Pictures College",
+ 			"graduateStatus": true,
+ 			"Scholarship": {
+ 				"grantedBy": null,
+ 				"issued": null,
+ 				"specialAwards": [true, "Trouble-maker of the Year", "1999"]
+ 			}
+ 		}
+ 	]
+ }
+
+XML
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <students>
+    <isStudent>false</isStudent>
+    <firstName>Wily</firstName>
+    <lastName>Wonka</lastName>
+    <date>07.07.1997</date>
+    <email>willy.wonka@chocolatefactory.com</email>
+    <graduationYear>2020</graduationYear>
+    <institution>Unicorn University</institution>
+    <graduateStatus>false</graduateStatus>
+    <Scholarship>
+      <grantedBy>Unicorn University Scholarship Fund</grantedBy>
+      <issued>Winnipeg, Canada</issued>
+      <issued>2018</issued>
+      <specialAwards>true</specialAwards>
+      <specialAwards>Best chocolate maker</specialAwards>
+      <specialAwards>2001</specialAwards>
+    </Scholarship>
+  </student>
+  <student>
+    <isStudent>false</isStudent>
+    <firstName>Bart</firstName>
+    <lastName>Simpson</lastName>
+    <date>01.01.1998</date>
+    <email>bartboy@simpsonssuck.com</email>
+    <graduationYear>2020</graduationYear>
+    <institution>Universal Pictures College</institution>
+    <graduateStatus>true</graduateStatus>
+    <Scholarship>
+      <grantedBy/>
+      <issued/>
+      <specialAwards>true</specialAwards>
+      <specialAwards>Trouble-maker of the Year</specialAwards>
+      <specialAwards>1999</specialAwards>
+    </Scholarship>
+  </students>
+</root>
+
+
+YAML
+
+students:
+  - isStudent: false
+    firstName: Wily
+    lastName: Wonka
+    date: 07.07.1997
+    email: willy.wonka@chocolatefactory.com
+    graduationYear: '2020'
+    institution: Unicorn University
+    graduateStatus: false
+    Scholarship:
+      grantedBy: Unicorn University Scholarship Fund
+      issued:
+        - 'Winnipeg, Canada'
+        - '2018'
+      specialAwards:
+        - true
+        - Best chocolate maker
+        - '2001'
+  - isStudent: false
+    firstName: Bart
+    lastName: Simpson
+    date: 01.01.1998
+    email: bartboy@simpsonssuck.com
+    graduationYear: '2020'
+    institution: Universal Pictures College
+    graduateStatus: true
+    Scholarship:
+      grantedBy: null
+      issued: null
+      specialAwards:
+        - true
+        - Trouble-maker of the Year
+        - '1999'
+		
+students:
+  - isStudent: false
+    firstName: Wily
+    lastName: Wonka
+    date: 07.07.1997
+    email: willy.wonka@chocolatefactory.com
+    graduationYear: '2020'
+    institution: Unicorn University
+    graduateStatus: false
+    Scholarship:
+      grantedBy: Unicorn University Scholarship Fund
+      issued: ['Winnipeg, Canada', 2018]
+      specialAwards: [true,Best chocolate maker,'2001']
+  - isStudent: false
+    firstName: Bart
+    lastName: Simpson
+    date: 01.01.1998
+    email: bartboy@simpsonssuck.com
+    graduationYear: '2020'
+    institution: Universal Pictures College
+    graduateStatus: true
+    Scholarship:
+      grantedBy: null
+      issued: null
+      specialAwards: [true, Trouble-makerof the Year, '1999']
+     
